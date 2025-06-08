@@ -54,4 +54,3 @@ Make sure your IP camera is accessible or your system's webcam is connected. The
 
 - For optimal performance on Raspberry Pi, use the TensorFlow Lite version of the model.
 - Ensure I2C is enabled for OLED use on Raspberry Pi, and the correct IP stream URL is provided if using an IP camera.
-- 
