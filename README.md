@@ -4,23 +4,27 @@ This project is a real-time Sign Language Recognition system designed to assist 
 
 ## Overview
 
-The system captures hand gestures via a webcam and translates them into readable text and speech using deep learning. It is built to work on a regular PC and deployable on Raspberry Pi.
+The system captures hand gestures through a webcam or IP camera feed, processes them using MediaPipe for landmark detection, and translates them into readable text and speech using a deep learning model. It is designed to run on regular PCs as well as lightweight platforms like Raspberry Pi using TensorFlow Lite.
 
 ## Features
 
 - Real-time sign recognition
-- Text output of detected gestures
+- Uses IP camera or built-in webcam as input source
+- Gesture tracking with MediaPipe
+- Text output of detected signs
 - Optional voice feedback using text-to-speech
-- Lightweight deployment with TensorFlow Lite
+- Lightweight and portable using TensorFlow Lite
 
 ## Technologies Used
 
-- Python
-- OpenCV
-- TensorFlow / TensorFlow Lite
-- NumPy
-- Raspberry Pi (for hardware version)
-- Pyttsx3 (for voice)
+- Python  
+- MediaPipe (for real-time hand landmark detection)  
+- OpenCV  
+- TensorFlow / TensorFlow Lite  
+- NumPy  
+- IP Camera Integration  
+- Raspberry Pi (for hardware version)  
+- Pyttsx3 (for voice feedback)
 
 ## Installation
 
@@ -33,14 +37,20 @@ The system captures hand gestures via a webcam and translates them into readable
 
 ## Usage
 
-After installation, launch the application using your preferred Python environment or interface.
+After installing the dependencies, launch the application using your preferred Python environment.
 
-Make sure the webcam is connected and functional. The system will process the input gestures and provide real-time output in text and optionally voice.
+Make sure your IP camera is accessible or your system's webcam is connected. The application will start processing the video stream, detect hand gestures using MediaPipe, and provide real-time text and voice output.
+
+## Results
+
+- Achieved **100% accuracy** during controlled testing on custom dataset.
+- Successfully integrated with both **USB webcam** and **IP camera** for gesture capture.
+- Delivers low-latency detection suitable for real-time communication needs.
 
 ## Note
 
-- Use TensorFlow Lite version for better performance on Raspberry Pi.
-- Ensure camera permissions are granted if running on restricted systems.
+- For optimal performance on Raspberry Pi, use TensorFlow Lite version.
+- Ensure network access to IP camera and camera permissions on the device are enabled.
 
 ## Acknowledgments
 
