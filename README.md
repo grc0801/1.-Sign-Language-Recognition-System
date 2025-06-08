@@ -1,6 +1,6 @@
-# 1.-Sign-Language-Recognition-System
+# Sign Language Recognition System
 
-This project is a real-time Sign Language Detection system designed to assist communication for individuals with hearing or speech impairments.
+This project is a real-time Sign Language Recognition system designed to assist communication for individuals with hearing or speech impairments.
 
 ## Overview
 
@@ -22,35 +22,27 @@ The system captures hand gestures via a webcam and translates them into readable
 - Raspberry Pi (for hardware version)
 - Pyttsx3 (for voice)
 
-## Project Structure
-
-sign-language-detection/
-├── model/                 # Trained model files  
-├── images/                # Sample input gesture images  
-├── sign_detector.py       # Main script  
-├── utils/                 # Helper functions  
-├── README.md
-
 ## Installation
 
 1. Clone the repository:
    git clone https://github.com/yourusername/sign-language-detection.git
 
-2. Navigate to the folder:
+2. Navigate to the project folder:
    cd sign-language-detection
 
 3. Install dependencies:
    pip install -r requirements.txt
 
-## Run
+## Usage
 
-To start the detection system, run:
-   python sign_detector.py
+After installation, run the application using your preferred Python environment or interface.
+
+Make sure the webcam is connected and functional. The system will process the input gestures and provide real-time output in text and optionally voice.
 
 ## Note
 
-- Ensure your webcam is connected.
-- If running on Raspberry Pi, use the TFLite version for better performance.
+- Use TensorFlow Lite version for better performance on Raspberry Pi.
+- Ensure camera permissions are granted if running on restricted systems.
 
 ## Acknowledgments
 
