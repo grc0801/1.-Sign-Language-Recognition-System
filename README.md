@@ -25,7 +25,7 @@ The system captures hand gestures via a webcam and translates them into readable
 ## Installation
 
 1. Clone the repository:
-   git clone https://github.com/yourusername/sign-language-detection.git
+   git clone https://github.com/grc0801/sign-language-detection.git
 
 2. Navigate to the project folder:
    cd sign-language-detection
