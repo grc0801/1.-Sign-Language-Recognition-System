@@ -24,18 +24,16 @@ The system captures hand gestures via a webcam and translates them into readable
 
 ## Installation
 
-1. Clone the repository:
-   git clone https://github.com/grc0801/sign-language-detection.git
+1. Download or clone the project folder to your local system.
 
-2. Navigate to the project folder:
-   cd sign-language-detection
+2. Navigate to the project directory.
 
-3. Install dependencies:
+3. Install required dependencies:
    pip install -r requirements.txt
 
 ## Usage
 
-After installation, run the application using your preferred Python environment or interface.
+After installation, launch the application using your preferred Python environment or interface.
 
 Make sure the webcam is connected and functional. The system will process the input gestures and provide real-time output in text and optionally voice.
 
